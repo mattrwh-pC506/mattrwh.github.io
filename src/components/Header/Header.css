@@ -1,0 +1,41 @@
+:local(.c_Header) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+:local(.c_Header_Main) {
+  top: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 50px;
+  height: 100px;
+}
+
+:local(.c_Header_Sub) {
+  top: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 50px;
+  font-size: 25px;
+  font-weight: light;
+}
+
+:local(.c_Header_Sub__Text) {
+  color: white;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+:local(.c_Header__Darker) {
+  background-color: #2f2f2f;
+}
+
+:local(.c_Header__Lighter) {
+  background-color: #4e4e4e;
+}
