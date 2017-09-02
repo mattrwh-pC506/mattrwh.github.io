@@ -13,7 +13,7 @@ export const Header = (props: HeaderProps) => (
     <section>
         <div className={
             `${styles.c_Header} ${styles.c_Header_Main} ${styles.c_Header__Darker}`}>
-            {props.name}
+            <span className={styles.c_Header_Main__Text}>{props.name}</span>
         </div>
         <div className={
             `${styles.c_Header} ${styles.c_Header_Sub} ${styles.c_Header__Lighter}`}>

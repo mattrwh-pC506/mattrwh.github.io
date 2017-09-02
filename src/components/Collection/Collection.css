@@ -1,0 +1,19 @@
+:local(.c_Collection) {
+  border: 4px solid white;
+}
+
+:local(.c_Collection_Header_Box) {
+  padding: 15px;
+  border-bottom: 2px solid white;
+  margin: 0;
+}
+
+:local(.c_Collection_Item_Box) {
+  padding: 5px 15px;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+}
