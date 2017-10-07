@@ -16,15 +16,17 @@ module.exports = {
     module: {
         rules: [{
                 test: /\.css$/,
-                loader: 'style-loader'
-            }, {
+                loaders: ['style-loader']
+            },
+            {
                 test: /\.css$/,
                 loader: 'css-loader',
                 query: {
                     modules: true,
                     localIdentName: '[name]__[local]___[hash:base64:5]'
                 }
-            }, {
+            },
+            {
                 test: /\.tsx?$/,
                 loader: "awesome-typescript-loader"
             },
@@ -36,6 +38,9 @@ module.exports = {
                 loader: "source-map-loader"
             },
         ]
+    },
+    devServer: {
+        port: 9000
     },
 
     // When importing a module whose path matches one of the following, just

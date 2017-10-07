@@ -1,0 +1,8 @@
+:local(.c_Chart__Box___Row > figure),
+:local(.c_Chart__Box > figure) {
+  margin: 2.5px;
+}
+
+:local(.c_Chart__Box___Row) {
+  width: 50%;
+}

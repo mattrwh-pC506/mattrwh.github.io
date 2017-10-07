@@ -5,6 +5,7 @@ export interface ItemProps {
     value: string;
     isLink: boolean; 
     linkHref?: string;
+    isDisabled?: boolean;
 }
 
 export interface CollectionProps { 
@@ -18,9 +19,9 @@ export interface CollectionHeader {
 
 export const CollectionHeader = (headerProps: CollectionHeader) => {
     return (
-        <h1 className={styles.c_Collection_Header_Box}>
+        <h3 className={styles.c_Collection_Header__Box}>
             {headerProps.headerValue}
-        </h1>
+        </h3>
     );
 };
 
@@ -28,13 +29,13 @@ export const CollectionItem = (itemProps: ItemProps) => {
     if (itemProps.isLink) {
         return <a href={itemProps.linkHref}><span>{itemProps.value}</span></a>;
     } else {
-        return <span>{itemProps.value}</span>;
+        return <span className={itemProps.isDisabled ? styles.c_Collection_Item__Box___Disabled : null}>{itemProps.value}</span>;
     }
 };
 
 export const CollectionItemBox = (itemProps: ItemProps) => {
     return (
-        <div className={styles.c_Collection_Item_Box}>
+        <div className={itemProps.isLink ? styles.c_Collection_Item__Link : styles.c_Collection_Item__Box}>
             <CollectionItem {...itemProps}/>
         </div>
     );

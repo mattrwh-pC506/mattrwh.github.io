@@ -63,6 +63,7 @@
   height: 50px;
   font-size: 25px;
   font-weight: light;
+  border-bottom: 5px solid whitesmoke;
 }
 
 :local(.c_Header_Main__Text) {

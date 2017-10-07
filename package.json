@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -17,11 +18,17 @@
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.5",
     "awesome-typescript-loader": "^3.2.3",
     "css-loader": "^0.28.5",
+    "css-polyfills": "0.0.16",
+    "cssnano": "^3.10.0",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.6",
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.18.2",
     "typescript": "^2.4.2",
-    "webpack": "^3.5.5"
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.9.1"
   }
 }

@@ -1,19 +1,36 @@
 :local(.c_Collection) {
   border: 4px solid white;
+  background-color: white;
+  margin: 2.5px;
 }
 
-:local(.c_Collection_Header_Box) {
+:local(.c_Collection_Header__Box) {
   padding: 15px;
   border-bottom: 2px solid white;
   margin: 0;
 }
 
-:local(.c_Collection_Item_Box) {
+:local(.c_Collection_Item__Box),
+:local(.c_Collection_Item__Link) {
   padding: 5px 15px;
-  border-bottom: 1px solid whitesmoke;
-  background-color: white;
+  border-top: 1px solid whitesmoke;
 }
 
-h1 {
+:local(.c_Collection_Item__Link:hover) {
+  background-color: whitesmoke;
+}
+
+:local(.c_Collection_Item__Box___Disabled) {
+  color: darkgray;
+  cursor: not-allowed;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
