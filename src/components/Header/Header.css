@@ -50,29 +50,29 @@
   position: absolute;
   left: 0;
   right: 0;
-  font-size: 50px;
-  height: 100px;
+  font-size: 25px;
+  height: 30px;
 }
 
 :local(.c_Header_Sub) {
-  top: 100px;
+  top: 30px;
   position: absolute;
   left: 0;
   right: 0;
   z-index: -1;
-  height: 50px;
-  font-size: 25px;
-  font-weight: light;
+  height: 25px;
+  font-size: 16px;
+  font-weight: bold;
   border-bottom: 5px solid whitesmoke;
 }
 
 :local(.c_Header_Main__Text) {
-  color: #2f2f2f;
+  color: #232323;
   animation: pulse 1s infinite alternate ease-in-out;
 }
 
 :local(.c_Header_Sub__Text) {
-  color: #b7b7b7;
+  color: #767676;
   padding-right: 5px;
   padding-left: 5px;
 }

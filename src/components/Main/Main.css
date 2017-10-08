@@ -4,7 +4,7 @@
 
 :local(.c_Main__Container) {
   position: absolute;
-  top: 150px;
+  top: 50px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -15,12 +15,21 @@
   justify-content: space-between;
 }
 
+:local(.c_Main__Column___Left),
+:local(.c_Main__Column___Right),
 :local(.c_Main__Column) {
   margin: 2.5px;
   min-width: 500px;
-  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+:local(.c_Main__Column___Left) {
+  width: 60%;
+}
+
+:local(.c_Main__Column___Right) {
+  width: 40%;
 }
 
 :local(.c_Main__Row) {

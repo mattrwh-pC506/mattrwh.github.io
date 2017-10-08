@@ -5,7 +5,7 @@
 }
 
 :local(.c_Collection_Header__Box) {
-  padding: 15px;
+  padding: 5px;
   border-bottom: 2px solid white;
   margin: 0;
 }

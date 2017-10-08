@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { HeaderProps, Header } from "../Header/Header";
 import { CollectionProps, Collection } from "../Collection/Collection";
 import { ChartProps, Chart } from "../Chart/Chart";
@@ -122,13 +123,13 @@ export const Main = () => {
             <Header {...headerData} />
             <StyledBox padding={'5px'} margin={'5px'}>
                 <section  className={styles.c_Main__Container}>
-                    <section className={styles.c_Main__Column}>
+                    <section className={styles.c_Main__Column___Left}>
                         {collectionComponents}
                         <section className={styles.c_Main__Row}>
                             {smallChartComponents}
                         </section>
                     </section>
-                    <section className={styles.c_Main__Column}> {bigChartComponents} </section>
+                    <section className={styles.c_Main__Column___Right}> {bigChartComponents} </section>
                 </section>
                 
             </StyledBox>
